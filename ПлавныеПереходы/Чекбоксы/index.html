@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Чекбоксы, шаг 3</title>
+    <meta charset="utf-8">
+    <!--<base href="/assets/course84/">-->
+    <!--<link href="material.css" rel="stylesheet">-->
+    <style>
+        label {
+            position: relative;
+            cursor: pointer;
+
+        }
+
+        label::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -44px;
+            z-index: 1;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #5a5a5a;
+            transition: 0.3s ease-in-out;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked ~ label::before {
+            width: 21px;
+            height: 10px;
+            border-color: #00bad2;
+            border-top-style: none;
+            border-right-style: none;
+            transform: rotate(-45deg);
+        }
+        .card{
+            width: 500px;
+            margin: 200px auto;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body class="green-theme">
+<section class="card">
+    <h1 class="question"><span>Какие значения свойства position правильные?</span></h1>
+    <form class="answers">
+        <button class="fab">&#58882;</button>
+        <div>
+            <input type="checkbox" id="answer1">
+            <label for="answer1">absolute</label>
+        </div>
+        <div>
+            <input type="checkbox" id="answer2">
+            <label for="answer2">great</label>
+        </div>
+        <div>
+            <input type="checkbox" id="answer3">
+            <label for="answer3">majestic</label>
+        </div>
+    </form>
+</section>
+</body>
+</html>

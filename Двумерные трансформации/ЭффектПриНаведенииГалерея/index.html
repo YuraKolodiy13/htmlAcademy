@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Эффекты при наведении: галерея</title>
+    <meta charset="utf-8">
+    <!--<base href="/assets/course71/">-->
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f5f5f5;
+        }
+
+        .deck {
+            list-style: none;
+        }
+
+        .deck > li {
+            position: relative;
+            display: inline-block;
+            margin: 0 20px 20px 0;
+        }
+
+        .deck img {
+            width: 100px;
+            transition: all 0.1s linear;
+        }
+
+        .deck img:hover {
+            opacity: 0.6;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+<ul class="deck">
+    <li><img class="ten" src="10.png"></li>
+    <li><img class="jack" src="jack.png"></li>
+    <li><img class="queen" src="queen.png"></li>
+    <li><img class="king" src="king.png"></li>
+    <li><img class="ace" src="ace.png"></li>
+    <li><img class="ten" src="10.png"></li>
+    <li><img class="jack" src="jack.png"></li>
+    <li><img class="queen" src="queen.png"></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Испытание: комбинации фильтров</title>
+    <!--<base href="/assets/course97/">-->
+    <!--<link href="style.css" rel="stylesheet">-->
+    <!--<link href="course.css" rel="stylesheet">-->
+    <style>
+        .exam{
+            width: 80%;
+            margin: 50px auto;
+        }
+        .finale .combo-1 {
+            background-image: url("img1.jpg");
+            filter: drop-shadow(5px 5px 5px black) opacity(0.5);
+            width: 200px;
+            height: 400px;
+        }
+
+        .finale .combo-2 {
+            background-image: url("img2.jpg");
+            filter: saturate(5) blur(1px) ;
+            width: 200px;
+            height: 400px;
+        }
+
+        .finale .combo-3 {
+            background-image: url("img3.jpg");
+            filter:  brightness(1.5) hue-rotate(270deg);
+            width: 200px;
+            height: 400px;
+        }
+        .finale, .wide{
+            display: flex;
+        }
+        .wide .combo-1 {
+            background-image: url("img1.jpg");
+            width: 200px;
+            height: 400px;
+        }
+        .wide .combo-2 {
+            background-image: url("img2.jpg");
+            width: 200px;
+            height: 400px;
+        }
+        .wide .combo-3 {
+            background-image: url("img3.jpg");
+            width: 200px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body class="exam">
+    <div class="finale">
+        <div class="combo-1"></div>
+        <div class="combo-2"></div>
+        <div class="combo-3"></div>
+    </div>
+    <div class="wide">
+        <div class="combo-1"></div>
+        <div class="combo-2"></div>
+        <div class="combo-3"></div>
+    </div>
+</body>
+</html>

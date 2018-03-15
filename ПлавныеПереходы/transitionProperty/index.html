@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>transition-property: какие свойства изменять плавно?</title>
+    <meta charset="utf-8">
+    <!--<base href="/assets/course84/">-->
+    <!--<link href="material.css" rel="stylesheet">-->
+    <style>
+        .btn {
+            color: #ffffff;
+            transition-duration: 1s, 2s;
+            transition-property:  background-color, transform;
+            margin: 200px auto;
+            display: block;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: none;
+            background: #00e676 url("ok.png") no-repeat 50% 50%;
+            background-size: 50%;
+            outline: none;
+        }
+
+        .btn:hover {
+            font-size: 60px;
+            background-color: #ff5252;
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn"></button>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Закруглённые внутрь углы, шаг 4</title>
+    <meta charset="utf-8">
+    <!--<base href="/assets/course76/">-->
+    <style>
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Lora", serif;
+            color: #333333;
+            background-color: rgb(42, 113, 113);
+        }
+
+        .outer {
+            position: relative;
+            display: block;
+            max-width: 320px;
+            margin: 50px auto 0;
+            padding: 20px 0;
+            background-color: #ffffff;
+            border: 1px solid #888888;
+            border-width: 1px 0;
+        }
+
+        .inner {
+            position: relative;
+            padding: 0px 40px;
+            font-style: italic;
+            background-color: #ffffff;
+        }
+
+        .inner p {
+            margin: 0 0 1.0em;
+            font-size: 1.5em;
+        }
+
+        .inner footer {
+            display: block;
+            text-align: right;
+        }
+
+        .inner footer a {
+            text-decoration: none;
+            color: #333333;
+        }
+
+        .inner {
+            margin: 0 -20px;
+        }
+
+        .inner::before,
+        .inner::after,
+        .outer::before{
+            content: "";
+            position: absolute;
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            border: 20px solid #000000;
+            border-radius: 50%;
+            box-sizing: border-box;
+            border-color: #fff;
+        }
+
+        .inner::before {
+            bottom: -60px;
+            left: -40px;
+            clip: rect(auto, auto, 40px, 40px);
+        }
+
+        .inner::after {
+            right: -40px;
+            bottom: -60px;
+            clip: rect(auto, 40px, 40px, auto);
+        }
+
+        .outer::before {
+            top: -40px;
+            left: -60px;
+            clip: rect(40px, auto, auto, 40px);
+        }
+
+        .outer::after {
+            content: "";
+            position: absolute;
+            z-index: 1;
+            width: 80px;
+            height: 80px;
+            border: 20px solid #000000;
+            box-sizing: border-box;
+            border-radius: 50%;
+            top: -40px;
+            right: -60px;
+            clip: rect(40px, 40px, auto, auto);
+            border-color: #fff;
+    </style>
+    <link href="//fonts.googleapis.com/css?family=Lora:italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+</head>
+<body>
+<blockquote class="outer">
+    <div class="inner">
+        <p>Любую теорию можно согласовать с любым фактом, если принять некоторые дополнительные допущения.</p>
+        <footer>
+            <a href="">— Хантер С. Томпсон</a>
+        </footer>
+    </div>
+</blockquote>
+</body>
+</html>

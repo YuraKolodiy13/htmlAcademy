@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Анимация CSS-фильтров</title>
+    <!--<base href="/assets/course97/">-->
+    <!--<link href="style.css" rel="stylesheet">-->
+    <!--<link href="course.css" rel="stylesheet">-->
+    <style>
+        *{
+            margin: 0;
+        }
+        @keyframes rotate-colors {
+            100% {
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        .hue-animate img {
+            animation: rotate-colors 4s linear infinite;
+            max-width: 100%;
+            height: auto;
+
+        }
+    </style>
+</head>
+<body>
+<div class="compare">
+    <div class="compare-single hue-animate">
+        <img src="img.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>

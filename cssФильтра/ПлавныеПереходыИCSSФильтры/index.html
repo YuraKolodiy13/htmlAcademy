@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Плавные переходы и CSS-фильтры</title>
+    <!--<base href="/assets/course97/">-->
+    <!--<link href="style.css" rel="stylesheet">-->
+    <!--<link href="course.css" rel="stylesheet">-->
+    <style>
+        .combo{
+            width: 500px;
+            margin: auto;
+        }
+        .combo img {
+            filter: grayscale(1) blur(2px);
+            transition: 0.6s;
+            max-width: 100%;
+            height: auto;
+        }
+
+        .combo img:hover {
+            filter: none;
+        }
+    </style>
+</head>
+<body>
+<div class="compare">
+    <div class="compare-single combo">
+        <img src="img.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>

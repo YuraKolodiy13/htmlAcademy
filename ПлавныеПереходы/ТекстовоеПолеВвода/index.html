@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Текстовое поле ввода, шаг 4</title>
+    <meta charset="utf-8">
+    <!--<base href="/assets/course84/">-->
+    <!--<link href="material.css" rel="stylesheet">-->
+    <style>
+        .card{
+            width: 300px;
+            margin: 200px auto;
+        }
+        .label-box {
+            position: relative;
+            width: 270px;
+        }
+
+        .label-box::before,
+        .label-box::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0;
+            bottom: 1px;
+            background-color: #757575;
+            transition: width 0.2s;
+        }
+
+        .label-box::before {
+            left: 50%;
+        }
+
+        .label-box::after {
+            right: 50%;
+        }
+
+        input:focus ~ .label-box::before,
+        input:focus ~ .label-box::after {
+            width: 50%;
+        }
+
+        input {
+            width: 270px;
+            padding: 5px;
+            font-size: 18px;
+            border: none;
+            border-bottom: 1px solid #757575;
+            box-sizing: border-box;
+        }
+
+        label {
+            position: absolute;
+            top: -36px;
+            font-size: 18px;
+            color: #757575;
+            transition: 0.2s ease all;
+            pointer-events: none;
+        }
+
+        input:focus ~ .label-box label,
+        input:valid ~ .label-box label {
+            font-size: 14px;
+            transform: translateY(-20px);
+        }
+        input:focus{
+            outline: none;
+        }
+        .question{
+            margin-bottom: 50px;
+        }
+    </style>
+</head>
+<body class="purple-theme">
+<section class="card">
+    <h1 class="question"><span>Как назывался самый первый браузер?</span></h1>
+    <form class="answers">
+        <!--<button class="fab">&#58882;</button>-->
+        <div>
+            <input type="text" required>
+            <div class="label-box">
+                <label>Слово по-английски</label>
+            </div>
+        </div>
+    </form>
+</section>
+</body>
+</html>

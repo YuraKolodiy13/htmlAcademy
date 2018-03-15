@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Испытание: разные фильтры</title>
+    <!--<base href="/assets/course97/">-->
+    <!--<link href="style.css" rel="stylesheet">-->
+    <!--<link href="course.css" rel="stylesheet">-->
+    <style>
+        .img-1 {
+            filter: contrast(5);
+        }
+
+        .img-2 {
+            filter: invert(1);
+        }
+
+        .img-3 {
+            filter: sepia(1);
+        }
+
+        .img-4 {
+            filter: hue-rotate(180deg);
+        }
+
+        .img-5 {
+            filter: grayscale(1);
+        }
+
+        .img-6 {
+            filter: saturate(5);
+        }
+        .finale{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        img{
+            margin: 0 auto;
+        }
+        *{
+            margin: 0;
+        }
+        div{
+            display: flex;
+        }
+    </style>
+</head>
+<body class="exam">
+<div class="finale">
+    <div class="img-1"><img src="img1.jpg" alt=""></div>
+    <div class="img-2"><img src="img2.jpg" alt=""></div>
+    <div class="img-3"><img src="img3.jpg" alt=""></div>
+    <div class="img-4"><img src="img1.jpg" alt=""></div>
+    <div class="img-5"><img src="img2.jpg" alt=""></div>
+    <div class="img-6"><img src="img3.jpg" alt=""></div>
+</div>
+</body>
+</html>
